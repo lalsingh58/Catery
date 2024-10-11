@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/catery/style.css">
+    <link rel="stylesheet" href="/catery/stylesheets/header.css">
+    <link rel="stylesheet" href="/catery/stylesheets/footer.css">
+    <link rel="stylesheet" href="/catery/stylesheets/services.css">
+    <link rel="stylesheet" href="/catery/stylesheets/gallery.css">
+    <link rel="stylesheet" href="/catery/stylesheets/hero.css">
+
+     <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Catery</title>
+
+</head>
+<body>
+
+<!--HEADER---------------------------------------------------------------->    
+    <header>
+        <div class="logo">
+            <h1>Catery</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="/catery/index.html">Home</a></li>
+                <li><a href="#services">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="/catery/auth/signup.html" class="buttons">Sign Up</a>
+            <a href="/catery/auth/login.html" class="buttons">Login</a>
+            <a id="userid" href="/catery/dashboard/admin.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <div class="menu-toggle">
+            <span>&#9776;</span>
+        </div>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="/catery/index.html">Home</a></li>
+                <li><a href="#services">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </header>
+
+<!--HERO------------------------------------------------------------------> 
+<section class="hero-section">
+    <div class="hero-left">
+      <img src="/catery/images/heroimage.jpg" alt="Hero Image">
+    </div>
+    <div class="hero-right">
+      <h1 class="hero-title">The Best Events Start Here</h1>
+      <p class="hero-subtitle">Serving delicious food for your special events</p>
+      <a href="#" class="hero-button">Learn More</a>
+    </div>
+  </section>
+  
+<!--SERVICES-------------------------------------------------------------->
+
+<div class="services" id="services">
+    <div class="services-intro">
+      <div class="intro-header">
+        <div class="header-icons">
+          <i class="fa-solid fa-wheat-awn left-icon"></i>
+          <p id="header-para">What we do</p>
+          <i class="fa-solid fa-wheat-awn right-icon"></i>
+        </div>
+        <h2>Events We Cater</h2>
+        <p>We provide catering for company events and office parties. Full-service catering with drinks, luxury appetizers, waiting staff, and rental materials. Plenty of vegetarian, non-vegetarian, and vegan options!</p>
+      </div>
+    </div>
+  
+    <div class="service-grid">
+      <div class="service-item">
+        <div class="image-container parallax" style="background-image: url('/catery/images/wedding.jpg');">
+          <div class="overlay-text">Weddings</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="image-container parallax" style="background-image: url('/catery/images/parties.jpg');">
+          <div class="overlay-text">Parties</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="image-container parallax" style="background-image: url('/catery/images/office.jpg');">
+          <div class="overlay-text">Office Events</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="image-container parallax" style="background-image: url('/catery/images/socialevents.jpg');">
+          <div class="overlay-text">Social Events</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- GALLERY SECTION ---------------------------------------------------->
+<div class="gallery-section" id="gallery">
+    <div class="text-center">
+      <div class="icons-and-paragraph">
+        <i class="fa-solid fa-wheat-awn flipped-icon"></i>
+        <p class="gallery-description">
+          Look at our Projects
+        </p>
+        <i class="fa-solid fa-wheat-awn"></i>
+      </div>
+      
+      <h2 class="gallery-heading"> Photo Gallery</h2>
+    </div>
+  
+    <div class="gallery-grid">
+      <!-- Left Section: Large Image -->
+        <div class="left-section">
+            <img src="/catery/images/butterchicken.jpg" alt="Left Image" class="gallery-image">
+        </div>
+
+        <!-- Right Section: Two Smaller Images -->
+         <div class="right-section">
+            <div class=" top-right">
+                <img src="/catery/images/alootikki.jpeg" alt="Top Right Image" class="gallery-image">
+            </div>
+            <div class=" bottom-right">
+                <img src="/catery/images/kadhipakora.jpg" alt="Bottom Right Image" class="gallery-image">
+            </div>
+         </div>
+        
+    </div>
+  </div>
+  
+   
+<!--FOOTER----------------------------------------------------------------> 
+<footer class="footer">
+    
+    <div class="footer-container">
+        <div class="footer-section find-us">
+            <h3>Find Us</h3>
+            <p>292 Sant Rd.<br>Delhi, India</p>
+        </div>
+        <div class="footer-section contact-us">
+            <h3>Contact Us</h3>
+            <p>1800 – 123 456 789<br>
+            <a href="mailto:support@example.com">support@example.com</a><br>
+            Mon - Sat: 10am - 6pm<br>Sunday: Closed</p>
+        </div>
+        <div class="footer-section explore">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section events">
+            <h3>Events</h3>
+            <ul>
+                <li><a href="#">Office Events</a></li>
+                <li><a href="#">Wedding</a></li>
+                <li><a href="#">Social Events</a></li>
+                <li><a href="#">Parties</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Catery. All rights reserved</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="/catery/javascripts/header.js"></script>    
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #242038;
+    --purple: #9067C6;
+    --indigo: #8D86C9;
+    --gray: #CAC4CE;
+    --linen: #CAC4CE;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: "Khand", sans-serif;
+    background-color: var(--indigo);
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 16rem; 
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: var(--dark);
+    padding: 2rem 0;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+    
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 7rem;
+    height: 7rem; 
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: var(--indigo);
+}
+
+.admin-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menu {
+    list-style: none;
+    width: 80%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.menu li {
+    margin: 1.2rem 0;
+    width:100%;
+    text-align: center;
+    
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem; 
+    padding: 0.625rem 1rem;
+    border-radius: 1rem;
+}
+
+.menu a:hover {
+    background-color: var(--purple);
+}
+
+.menu-btn {
+    position: fixed;
+    top:.9rem;
+    left:.9rem;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+    
+}
+.menu-btn i{
+    background-color: var(--dark);
+    color: var(--purple);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem; 
+
+}
+
+.content {
+    margin-left: 16rem; 
+    width: 100%;
+    padding: 2rem;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--indigo);
+}
+.content #items{
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 768px) { 
+    .sidebar {
+        left: -16rem;
+    }
+
+    .sidebar-header {
+        text-align: center;
+    }
+    .menu li {
+        margin: .4rem 0;
+        
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    
+}

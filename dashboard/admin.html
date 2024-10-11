@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Styles-->
+     <link rel="stylesheet" href="/catery/stylesheets/dashboard.css">
+     <link rel="stylesheet" href="/catery/stylesheets/items.css">
+     <link rel="stylesheet" href="/catery/stylesheets/cart.css">
+     <link rel="stylesheet" href="/catery/stylesheets/payment.css">
+     <link rel="stylesheet" href="/catery/stylesheets/order.css">
+ 
+      <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playball&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+ 
+     <!--Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <title>Catery</title>
+</head>
+<body>
+
+<!--DASHBOARD ------------------------------------------------------->
+
+    <div class="dashboard">
+        <!-- Menu Button for smaller devices -->
+        <div class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-photo"></div>
+                <div class="admin-name">Admin Name</div>
+            </div>
+            <ul class="menu">
+                <li><a href="#items">View Items</a></li>
+                <li><a href="#cart-section">My Cart</a></li>
+                <li><a href="#orders-section">My Orders</a></li>
+                <li><a href="/catery/index.html">Back to Home</a></li>
+                <li><a href="/catery/index.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            
+            
+            <div id="items">
+                <nav class="food-navbar">
+                    <button class="nav-button" onclick="loadCategory('appetizers')" data-category="appetizers">Appetizers</button>
+                    <button class="nav-button" onclick="loadCategory('maindishes')" data-category="maindishes">Main Dishes</button>
+                    <button class="nav-button" onclick="loadCategory('desserts')" data-category="desserts">Desserts</button>
+                    <button class="nav-button" onclick="loadCategory('beverages')" data-category="beverages">Beverages</button>
+                </nav>
+    
+                <!-- Section to show the items dynamically -->
+                <div class="food-items" id="food-items">
+
+                </div>
+            </div>
+
+            <div id="cart-section">
+                <h2>My Cart</h2>
+                <div id="cart-items"></div>
+                <div id="cart-summary">
+                    <div>Total Amount: ₹<span id="total-amount-cart">0</span></div>
+                    <button id="checkout-btn" onclick="openPaymentPopup()">Checkout</button>
+                </div>
+            </div>
+            <div id="payment-popup" class="popup">
+                <div class="popup-content">
+                    <h2>Your Order Summary</h2>
+                    <div id="cart-items-list"></div>
+            
+                    <div class="payment-summary">
+                        <h3>Total Amount Payable: ₹<span id="popup-total-amount"></span></h3>
+                    </div>
+            
+                    <div class="payment-options">
+                        <h3>Select Payment Method:</h3>
+                        <label><input type="radio" name="payment-method" value="cash-on-delivery" checked> Cash on Delivery</label><br>
+                        <label><input type="radio" name="payment-method" value="upi"> UPI</label><br>
+                        <label><input type="radio" name="payment-method" value="card"> Credit/Debit Card</label>
+                    </div>
+            
+                    <button id="place-order-btn">Place Order</button>
+                    <button id="close-popup-btn">Cancel</button>
+                </div>
+            </div>
+            
+            <div id="orders-section">
+                <h2>Your Orders</h2>
+                <div id="orders-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/catery/javascripts/dashboard.js"></script>
+    <script src="/catery/javascripts/items.js"></script>
+</body>
+</html>

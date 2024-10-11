@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark: #242038;
+    --purple: #9067C6;
+    --indigo: #8D86C9;
+    --gray: #CAC4CE;
+    --linen: #fcf7ee;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: var(--linen);
+}
